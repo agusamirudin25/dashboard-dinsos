@@ -16,6 +16,10 @@
             <div class="card-body">
               <form method="post" id="formManual">
                 <div class="form-group">
+                  <label>Tanggal</label>
+                  <input type="date" class="form-control" name="tanggal" required>
+                </div>
+                <div class="form-group">
                   <label>Total Data</label>
                   <input type="number" class="form-control" name="total" required>
                 </div>

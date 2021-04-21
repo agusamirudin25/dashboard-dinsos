@@ -122,8 +122,9 @@ class Import extends CI_Controller
   function prosesManual()
   {
     $total = $this->input->post('total', TRUE);
+    $tanggal = $this->input->post('tanggal', TRUE);
     $type = $this->session->type;
-    $data_input = ['jenis' => $type, 'total' => $total];
+    $data_input = ['jenis' => $type, 'total' => $total, 'tanggal' => $tanggal];
     $insert = $this->dataHandle->insert('tb_data', $data_input);
     if ($insert) {
       $res['status'] = 1;
